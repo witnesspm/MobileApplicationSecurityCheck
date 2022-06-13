@@ -1,16 +1,23 @@
-import {createRouter, createWebHashHistory} from 'vue-router'
+import {createRouter, createWebHashHistory,RouteRecordRaw} from 'vue-router'
+import AppLayout from '../layout/AppLayout.vue'
 
-const routes =[
+const routes :RouteRecordRaw[] =[
     {
         path:'/',
-        name:'home',
-        component:()=>import('../views/home/index.vue')
+        component:AppLayout,
+        children:[
+            {
+                path:'',//默认子路由
+                name:'home',
+                component:()=>import('../views/home/index.vue')
+            }
+        ]
     },
     {
         path:'/show',
         name:'show',
         component:()=>import('../views/show/index.vue')
-    },
+    }
 ]
 
 const router = createRouter({
