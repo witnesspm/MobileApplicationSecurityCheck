@@ -1,4 +1,14 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import router from './router'
 
-createApp(App).mount('#app')
+// element
+import ElementPlus from 'element-plus';
+import 'element-plus/theme-chalk/index.css'
+
+
+
+createApp(App)
+ .use(router)
+ .use(ElementPlus)
+ .mount('#app')
