@@ -1,16 +1,30 @@
 <template>
-    <div>
-        <h1>首页</h1>
+	<div class="box">
+	</div>
+    <div class="zhuti">
+      <div class="soucuo">
+
+     </div>
     </div>
 
-    <el-button>132</el-button>
 </template>
-
-<script lang="ts" >
-import { defineComponent, ref } from "vue"
-
-
+<script setup>
 </script>
-
 <style lang="less" scoped>
+@import './box.less';
+.zhuti{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.soucuo{
+    margin-top: 2%;
+    opacity: 0.9;
+    width: 200vh;
+    height: 80vh;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
 </style>

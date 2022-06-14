@@ -7,11 +7,11 @@
     @select="handleSelect"
   >
     <el-menu-item class="bannedclick" index="0">
+      
         <img class="logo" src="../../assets/logo.png" alt="">
     </el-menu-item>
     <div class="flex-grow" />
     <el-menu-item index="1">主页</el-menu-item>
-    <el-menu-item index="2">主页</el-menu-item>
   </el-menu>
 </template>
 
