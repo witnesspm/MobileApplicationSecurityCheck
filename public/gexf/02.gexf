@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gephi.org/gexf" xmlns:viz="http://www.gephi.org/gexf/viz">
+<graph type="static">
+ <attributes class="node" type="static">
+  <attribute id="0" title="type" type="string"/>
+  <attribute id="1" title="class_name" type="string"/>
+  <attribute id="2" title="method_name" type="string"/>
+  <attribute id="3" title="descriptor" type="string"/>
+  <attribute id="4" title="permissions" type="string"/>
+  <attribute id="5" title="permissions_level" type="string"/>
+  <attribute id="6" title="code" type="string"/>
+  <attribute id="7" title="java" type="string"/>
+  <attribute id="8" title="securityLabel" type="string"/>
+  <attribute id="9" title="ds_info" type="string"/>
+  <attribute id="10" title="ids_info" type="string"/>
+  <attribute id="11" title="activity" type="string"/>
+  <attribute id="12" title="service" type="string"/>
+  <attribute id="13" title="receiver" type="string"/>
+  <attribute id="14" title="provider" type="string"/>
+  <attribute id="15" title="extracallee" type="string"/>
+  <attribute id="16" title="caller" type="string"/>
+  <attribute id="17" title="Adware" type="string"/>
+  <attribute id="18" title="Jnicall" type="string"/>
+  <attribute id="19" title="api_sendinfo" type="string"/>
+  <attribute id="20" title="api_getinfo" type="string"/>
+  <attribute id="21" title="api_else" type="string"/>
+  <attribute id="22" title="riscky_string" type="string"/>
+  <attribute id="23" title="type Class" type="integer"/>
+  <attribute id="24" title="related" type="string"/>
+  <attribute id="25" title="unique" type="string"/>
+ </attributes>
+ <nodes>
+  <node id="0" label="com.admob.android.ads.Ad$1;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/Ad$1;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="1" label="com.admob.android.ads.AdRequester;requestAd(Landroid.content.Context; Ljava.lang.String; Ljava.lang.String;)Lcom.admob.android.ads.Ad;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdRequester;"/>
+    <attvalue for="2" value="requestAd"/>
+    <attvalue for="3" value="(Landroid.content.Context; Ljava.lang.String; Ljava.lang.String;)Lcom.admob.android.ads.Ad;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="2" label="com.admob.android.ads.AdView$1;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView$1;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="3" label="com.admob.android.ads.AdContainer;init(Lcom.admob.android.ads.Ad; Landroid.content.Context; Landroid.util.AttributeSet;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdContainer;"/>
+    <attvalue for="2" value="init"/>
+    <attvalue for="3" value="(Lcom.admob.android.ads.Ad; Landroid.content.Context; Landroid.util.AttributeSet;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="4" label="com.admob.android.ads.AdMobLocalizer$InitLocalizerThread;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdMobLocalizer$InitLocalizerThread;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="5" label="com.admob.android.ads.AdView;retrieveDeveloperMessage(Landroid.content.Context;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView;"/>
+    <attvalue for="2" value="retrieveDeveloperMessage"/>
+    <attvalue for="3" value="(Landroid.content.Context;)V"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="6" label="com.admob.android.ads.AdView$2;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView$2;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="7" label="com.admob.android.ads.AdView;init(Landroid.content.Context;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView;"/>
+    <attvalue for="2" value="init"/>
+    <attvalue for="3" value="(Landroid.content.Context;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="8" label="com.admob.android.ads.AdView;init(Landroid.content.Context; Landroid.util.AttributeSet;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView;"/>
+    <attvalue for="2" value="init"/>
+    <attvalue for="3" value="(Landroid.content.Context; Landroid.util.AttributeSet;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="9" label="com.admob.android.ads.AdView;setVisibility(I)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView;"/>
+    <attvalue for="2" value="setVisibility"/>
+    <attvalue for="3" value="(I)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="10" label="kagegames.apps.DWBeta.ImageThreadLoader$QueueRunner;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/ImageThreadLoader$QueueRunner;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="11" label="kagegames.apps.DWBeta.ImageThreadLoader;readBitmapFromNetwork(Ljava.net.URL;)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/ImageThreadLoader;"/>
+    <attvalue for="2" value="readBitmapFromNetwork"/>
+    <attvalue for="3" value="(Ljava.net.URL;)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="12" label="kagegames.apps.DWBeta.ServerRequestsMgr;getImage(Ljava.lang.String;)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/ServerRequestsMgr;"/>
+    <attvalue for="2" value="getImage"/>
+    <attvalue for="3" value="(Ljava.lang.String;)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="13" label="com.admob.android.ads.AdManager$1;onLocationChanged(Landroid.location.Location;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager$1;"/>
+    <attvalue for="2" value="onLocationChanged"/>
+    <attvalue for="3" value="(Landroid.location.Location;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get geographic longitude; "/>
+   </attvalues>
+  </node>
+  <node id="14" label="com.admob.android.ads.AdManager;getCoordinatesAsString(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="getCoordinatesAsString"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get geographic longitude; "/>
+   </attvalues>
+  </node>
+  <node id="15" label="com.admob.android.ads.AdManager;getCoordinates(Landroid.content.Context;)Landroid.location.Location;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="getCoordinates"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Landroid.location.Location;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain location information via WiFi/GPS, etc.; "/>
+   </attvalues>
+  </node>
+  <node id="16" label="com.dogbite.Rabies;init()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/dogbite/Rabies;"/>
+    <attvalue for="2" value="init"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="17" label="com.dogbite.Rabies;onStart(Landroid.content.Intent; I)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/dogbite/Rabies;"/>
+    <attvalue for="2" value="onStart"/>
+    <attvalue for="3" value="(Landroid.content.Intent; I)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get an SMS instance; "/>
+   </attvalues>
+  </node>
+  <node id="18" label="kagegames.apps.DWBeta.DWApplication;init()V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/DWApplication;"/>
+    <attvalue for="2" value="init"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="19" label="kagegames.apps.DWBeta.DWApplication;onCreate()V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/DWApplication;"/>
+    <attvalue for="2" value="onCreate"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="20" label="kagegames.apps.DWBeta.DogWars$BtnStart_ClickListener;onClick(Landroid.view.View;)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/DogWars$BtnStart_ClickListener;"/>
+    <attvalue for="2" value="onClick"/>
+    <attvalue for="3" value="(Landroid.view.View;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="21" label="kagegames.apps.DWBeta.PrefsManager;setSoundOn(Z)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/PrefsManager;"/>
+    <attvalue for="2" value="setSoundOn"/>
+    <attvalue for="3" value="(Z)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="22" label="kagegames.apps.DWBeta.PrefsManager;setVibrateOn(Z)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/PrefsManager;"/>
+    <attvalue for="2" value="setVibrateOn"/>
+    <attvalue for="3" value="(Z)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="23" label="kagegames.apps.DWBeta.OptionsActivity$toggleSound_ClickListener;onClick(Landroid.view.View;)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/OptionsActivity$toggleSound_ClickListener;"/>
+    <attvalue for="2" value="onClick"/>
+    <attvalue for="3" value="(Landroid.view.View;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="24" label="kagegames.apps.DWBeta.OptionsActivity$toggleVibrate_ClickListener;onClick(Landroid.view.View;)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/OptionsActivity$toggleVibrate_ClickListener;"/>
+    <attvalue for="2" value="onClick"/>
+    <attvalue for="3" value="(Landroid.view.View;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="25" label="kagegames.apps.DWBeta.NameOwnerDogActivity$NewOwnerDogTask;onPostExecute(Ljava.lang.Object;)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/NameOwnerDogActivity$NewOwnerDogTask;"/>
+    <attvalue for="2" value="onPostExecute"/>
+    <attvalue for="3" value="(Ljava.lang.Object;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="26" label="kagegames.apps.DWBeta.PuppyLoveWidgetConfiguration$1;onClick(Landroid.view.View;)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/PuppyLoveWidgetConfiguration$1;"/>
+    <attvalue for="2" value="onClick"/>
+    <attvalue for="3" value="(Landroid.view.View;)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="27" label="kagegames.apps.DWBeta.PuppyLoveWidgetProvider;onDeleted(Landroid.content.Context; [I)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/PuppyLoveWidgetProvider;"/>
+    <attvalue for="2" value="onDeleted"/>
+    <attvalue for="3" value="(Landroid.content.Context; [I)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="28" label="kagegames.apps.DWBeta.PuppyLoveWidgetProvider;onReceive(Landroid.content.Context; Landroid.content.Intent;)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/PuppyLoveWidgetProvider;"/>
+    <attvalue for="2" value="onReceive"/>
+    <attvalue for="3" value="(Landroid.content.Context; Landroid.content.Intent;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="29" label="com.admob.android.ads.Ad;fetchImage_0(Ljava.lang.String; Z)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/Ad;"/>
+    <attvalue for="2" value="fetchImage_0"/>
+    <attvalue for="3" value="(Ljava.lang.String; Z)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="30" label="com.admob.android.ads.Ad;fetchImage_1(Ljava.lang.String; Z)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/Ad;"/>
+    <attvalue for="2" value="fetchImage_1"/>
+    <attvalue for="3" value="(Ljava.lang.String; Z)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="31" label="com.admob.android.ads.Ad;fetchImage_2(Ljava.lang.String; Z)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/Ad;"/>
+    <attvalue for="2" value="fetchImage_2"/>
+    <attvalue for="3" value="(Ljava.lang.String; Z)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="32" label="kagegames.apps.DWBeta.PrefsManager;saveOwnerAndDogIDs_0(Ljava.lang.Long; Ljava.lang.Long;)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/PrefsManager;"/>
+    <attvalue for="2" value="saveOwnerAndDogIDs_0"/>
+    <attvalue for="3" value="(Ljava.lang.Long; Ljava.lang.Long;)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="33" label="kagegames.apps.DWBeta.PrefsManager;saveOwnerAndDogIDs_1(Ljava.lang.Long; Ljava.lang.Long;)V">
+   <attvalues>
+    <attvalue for="1" value="Lkagegames/apps/DWBeta/PrefsManager;"/>
+    <attvalue for="2" value="saveOwnerAndDogIDs_1"/>
+    <attvalue for="3" value="(Ljava.lang.Long; Ljava.lang.Long;)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+ </nodes>
+ <edges>
+  <edge id="0" source="1" target="14"/>
+  <edge id="1" source="1" target="29"/>
+  <edge id="2" source="2" target="1"/>
+  <edge id="3" source="2" target="30"/>
+  <edge id="4" source="3" target="31"/>
+  <edge id="5" source="5" target="14"/>
+  <edge id="6" source="6" target="5"/>
+  <edge id="7" source="7" target="5"/>
+  <edge id="8" source="8" target="5"/>
+  <edge id="9" source="9" target="5"/>
+  <edge id="10" source="10" target="11"/>
+  <edge id="11" source="14" target="15"/>
+  <edge id="12" source="16" target="17"/>
+  <edge id="13" source="18" target="19"/>
+  <edge id="14" source="20" target="32"/>
+  <edge id="15" source="23" target="21"/>
+  <edge id="16" source="24" target="22"/>
+  <edge id="17" source="25" target="33"/>
+  <edge id="18" source="28" target="27"/>
+</edges>
+</graph>
+</gexf>

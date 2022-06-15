@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gephi.org/gexf" xmlns:viz="http://www.gephi.org/gexf/viz">
+<graph type="static">
+ <attributes class="node" type="static">
+  <attribute id="0" title="type" type="string"/>
+  <attribute id="1" title="class_name" type="string"/>
+  <attribute id="2" title="method_name" type="string"/>
+  <attribute id="3" title="descriptor" type="string"/>
+  <attribute id="4" title="permissions" type="string"/>
+  <attribute id="5" title="permissions_level" type="string"/>
+  <attribute id="6" title="code" type="string"/>
+  <attribute id="7" title="java" type="string"/>
+  <attribute id="8" title="securityLabel" type="string"/>
+  <attribute id="9" title="ds_info" type="string"/>
+  <attribute id="10" title="ids_info" type="string"/>
+  <attribute id="11" title="activity" type="string"/>
+  <attribute id="12" title="service" type="string"/>
+  <attribute id="13" title="receiver" type="string"/>
+  <attribute id="14" title="provider" type="string"/>
+  <attribute id="15" title="extracallee" type="string"/>
+  <attribute id="16" title="caller" type="string"/>
+  <attribute id="17" title="Adware" type="string"/>
+  <attribute id="18" title="Jnicall" type="string"/>
+  <attribute id="19" title="api_sendinfo" type="string"/>
+  <attribute id="20" title="api_getinfo" type="string"/>
+  <attribute id="21" title="api_else" type="string"/>
+  <attribute id="22" title="riscky_string" type="string"/>
+  <attribute id="23" title="type Class" type="integer"/>
+  <attribute id="24" title="related" type="string"/>
+  <attribute id="25" title="unique" type="string"/>
+ </attributes>
+ <nodes>
+  <node id="0" label="com.admob.android.ads.AdManager$1;onLocationChanged(Landroid.location.Location;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager$1;"/>
+    <attvalue for="2" value="onLocationChanged"/>
+    <attvalue for="3" value="(Landroid.location.Location;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get geographic longitude; "/>
+   </attvalues>
+  </node>
+  <node id="1" label="com.admob.android.ads.AdManager;b(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="b"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get geographic longitude; "/>
+   </attvalues>
+  </node>
+  <node id="2" label="com.admob.android.ads.AdView$b;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView$b;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="3" label="com.admob.android.ads.AdView$d;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView$d;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="4" label="com.admob.android.ads.AdView;init(Landroid.app.Activity;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView;"/>
+    <attvalue for="2" value="init"/>
+    <attvalue for="3" value="(Landroid.app.Activity;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="5" label="com.admob.android.ads.AdView;init(Landroid.content.Context; Landroid.util.AttributeSet;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView;"/>
+    <attvalue for="2" value="init"/>
+    <attvalue for="3" value="(Landroid.content.Context; Landroid.util.AttributeSet;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="6" label="com.admob.android.ads.AdView;requestFreshAd()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdView;"/>
+    <attvalue for="2" value="requestFreshAd"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="7" label="com.admob.android.ads.InterstitialAd$a;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/InterstitialAd$a;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="8" label="com.admob.android.ads.ac;onAttachedToWindow()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/ac;"/>
+    <attvalue for="2" value="onAttachedToWindow"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="9" label="com.admob.android.ads.analytics.InstallReceiver;onReceive(Landroid.content.Context; Landroid.content.Intent;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/analytics/InstallReceiver;"/>
+    <attvalue for="2" value="onReceive"/>
+    <attvalue for="3" value="(Landroid.content.Context; Landroid.content.Intent;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="10" label="com.nubee.coinpirates.game.GameActivity;onCreate(Landroid.os.Bundle;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="onCreate"/>
+    <attvalue for="3" value="(Landroid.os.Bundle;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="11" label="com.nubee.coinpirates.game.GameActivity;init()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="init"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="12" label="com.nubee.coinpirates.game.GameActivity;onDestroy()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="onDestroy"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="13" label="com.nubee.coinpirates.game.GameActivity;onPause()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="onPause"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="14" label="com.nubee.coinpirates.game.GameActivity$GuestDailyThread;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity$GuestDailyThread;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="15" label="com.nubee.coinpirates.game.GameActivity$10;onClick(Landroid.content.DialogInterface; I)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity$10;"/>
+    <attvalue for="2" value="onClick"/>
+    <attvalue for="3" value="(Landroid.content.DialogInterface; I)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="16" label="com.nubee.coinpirates.game.GameActivity$6$1;onClick(Landroid.content.DialogInterface; I)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity$6$1;"/>
+    <attvalue for="2" value="onClick"/>
+    <attvalue for="3" value="(Landroid.content.DialogInterface; I)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="17" label="com.nubee.coinpirates.game.GameActivity;getUpdatePoints(Ljava.lang.String; I)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="getUpdatePoints"/>
+    <attvalue for="3" value="(Ljava.lang.String; I)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="18" label="com.nubee.coinpirates.payment.PaymentAccessor$PaymentRunner;onWorkerThreadResult(I I Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/payment/PaymentAccessor$PaymentRunner;"/>
+    <attvalue for="2" value="onWorkerThreadResult"/>
+    <attvalue for="3" value="(I I Ljava.lang.String;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="19" label="com.tapjoy.TapjoyFeaturedAppWebView$TapjoyWebViewClient;shouldOverrideUrlLoading(Landroid.webkit.WebView; Ljava.lang.String;)Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/tapjoy/TapjoyFeaturedAppWebView$TapjoyWebViewClient;"/>
+    <attvalue for="2" value="shouldOverrideUrlLoading"/>
+    <attvalue for="3" value="(Landroid.webkit.WebView; Ljava.lang.String;)Z"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="20" label="com.admob.android.ads.AdManager;getCoordinates(Landroid.content.Context;)Landroid.location.Location;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="getCoordinates"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Landroid.location.Location;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain location information via WiFi/GPS, etc.; "/>
+   </attvalues>
+  </node>
+  <node id="21" label="com.admob.android.ads.i;d()Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/i;"/>
+    <attvalue for="2" value="d"/>
+    <attvalue for="3" value="()Z"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="22" label="com.admob.android.ads.i;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/i;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="23" label="com.nubee.coinpirates.common.CommonConfig;getBitmapServerImage(Ljava.net.URL; I I)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/common/CommonConfig;"/>
+    <attvalue for="2" value="getBitmapServerImage"/>
+    <attvalue for="3" value="(Ljava.net.URL; I I)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="24" label="com.nubee.coinpirates.common.CommonConfig;getBitmapServerImage(Landroid.content.Context; Ljava.net.URL; Lcom.nubee.coinpirates.common.GetBitmapOptions;)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/common/CommonConfig;"/>
+    <attvalue for="2" value="getBitmapServerImage"/>
+    <attvalue for="3" value="(Landroid.content.Context; Ljava.net.URL; Lcom.nubee.coinpirates.common.GetBitmapOptions;)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="25" label="com.nubee.coinpirates.common.CommonConfig;getBitmapServerImage(Landroid.content.Context; Ljava.net.URL;)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/common/CommonConfig;"/>
+    <attvalue for="2" value="getBitmapServerImage"/>
+    <attvalue for="3" value="(Landroid.content.Context; Ljava.net.URL;)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="26" label="com.nubee.coinpirates.common.CommonConfig;getBitmapServerImage(Ljava.net.URL;)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/common/CommonConfig;"/>
+    <attvalue for="2" value="getBitmapServerImage"/>
+    <attvalue for="3" value="(Ljava.net.URL;)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="27" label="com.nubee.coinpirates.common.CommonConfig;getBitmapServerImage(Landroid.content.Context; Ljava.lang.String; Lcom.nubee.coinpirates.common.GetBitmapOptions;)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/common/CommonConfig;"/>
+    <attvalue for="2" value="getBitmapServerImage"/>
+    <attvalue for="3" value="(Landroid.content.Context; Ljava.lang.String; Lcom.nubee.coinpirates.common.GetBitmapOptions;)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="28" label="com.nubee.coinpirates.common.CommonConfig;getBitmapServerImage(Ljava.lang.String;)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/common/CommonConfig;"/>
+    <attvalue for="2" value="getBitmapServerImage"/>
+    <attvalue for="3" value="(Ljava.lang.String;)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="29" label="com.nubee.coinpirates.common.CommonConfig;getBitmapServerImage(Ljava.lang.String; I I)Landroid.graphics.Bitmap;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/common/CommonConfig;"/>
+    <attvalue for="2" value="getBitmapServerImage"/>
+    <attvalue for="3" value="(Ljava.lang.String; I I)Landroid.graphics.Bitmap;"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="30" label="com.android.MonitorService$2;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/MonitorService$2;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="31" label="com.android.MonitorService;PostRequest(Ljava.lang.String; Ljava.lang.String;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/MonitorService;"/>
+    <attvalue for="2" value="PostRequest"/>
+    <attvalue for="3" value="(Ljava.lang.String; Ljava.lang.String;)Ljava.lang.String;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="32" label="com.android.MonitorService;PostRequest(Ljava.lang.String; [B)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/MonitorService;"/>
+    <attvalue for="2" value="PostRequest"/>
+    <attvalue for="3" value="(Ljava.lang.String; [B)Ljava.lang.String;"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="33" label="com.android.MonitorService;init()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/MonitorService;"/>
+    <attvalue for="2" value="init"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get an SMS instance; "/>
+   </attvalues>
+  </node>
+  <node id="34" label="com.android.MonitorService;onStart(Landroid.content.Intent; I)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/MonitorService;"/>
+    <attvalue for="2" value="onStart"/>
+    <attvalue for="3" value="(Landroid.content.Intent; I)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Modify user settings; "/>
+   </attvalues>
+  </node>
+  <node id="35" label="com.android.MonitorService;onCreate()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/MonitorService;"/>
+    <attvalue for="2" value="onCreate"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="36" label="com.nubee.coinpirates.game.GameActivity;onOptionsItemSelected(Landroid.view.MenuItem;)Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="onOptionsItemSelected"/>
+    <attvalue for="3" value="(Landroid.view.MenuItem;)Z"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="37" label="com.nubee.coinpirates.game.GameActivity;onSaveInstanceState(Landroid.os.Bundle;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="onSaveInstanceState"/>
+    <attvalue for="3" value="(Landroid.os.Bundle;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="38" label="com.nubee.coinpirates.game.GameActivity$9;callback(Lcom.nubee.coinpirates.payment.PaymentInfoEntity;)Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity$9;"/>
+    <attvalue for="2" value="callback"/>
+    <attvalue for="3" value="(Lcom.nubee.coinpirates.payment.PaymentInfoEntity;)Z"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="39" label="com.nubee.coinpirates.game.GameActivity;saveGuest()Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="saveGuest"/>
+    <attvalue for="3" value="()Z"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="40" label="com.nubee.coinpirates.game.GameActivity$GuestRegistThread;onWorkerThreadResult(I I Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity$GuestRegistThread;"/>
+    <attvalue for="2" value="onWorkerThreadResult"/>
+    <attvalue for="3" value="(I I Ljava.lang.String;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="41" label="com.nubee.coinpirates.game.GameActivity$7;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity$7;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="42" label="com.nubee.coinpirates.game.GameRenderer;errorCallback(I Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameRenderer;"/>
+    <attvalue for="2" value="errorCallback"/>
+    <attvalue for="3" value="(I Ljava.lang.String;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="43" label="com.nubee.coinpirates.game.SoundManager;enableSe(Z)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/SoundManager;"/>
+    <attvalue for="2" value="enableSe"/>
+    <attvalue for="3" value="(Z)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Modify user settings; "/>
+   </attvalues>
+  </node>
+  <node id="44" label="com.nubee.coinpirates.payment.PaymentAccessor$InfomationRunner;onWorkerThreadResult(I I Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/payment/PaymentAccessor$InfomationRunner;"/>
+    <attvalue for="2" value="onWorkerThreadResult"/>
+    <attvalue for="3" value="(I I Ljava.lang.String;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="45" label="com.nubee.coinpirates.payment.PaymentAccessor$ConfirmRunner;onWorkerThreadResult(I I Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/payment/PaymentAccessor$ConfirmRunner;"/>
+    <attvalue for="2" value="onWorkerThreadResult"/>
+    <attvalue for="3" value="(I I Ljava.lang.String;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="46" label="com.nubee.coinpirates.payment.PaymentAccessor;save(Ljava.lang.String;)Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/payment/PaymentAccessor;"/>
+    <attvalue for="2" value="save"/>
+    <attvalue for="3" value="(Ljava.lang.String;)Z"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="47" label="com.tapjoy.TapjoyFeaturedApp$ConnectTask;doInBackground([Ljava.lang.Object;)Ljava.lang.Object;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/tapjoy/TapjoyFeaturedApp$ConnectTask;"/>
+    <attvalue for="2" value="doInBackground"/>
+    <attvalue for="3" value="([Ljava.lang.Object;)Ljava.lang.Object;"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="48" label="com.tapjoy.TapjoyFeaturedApp;incrementDisplayCountForStoreID(Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/tapjoy/TapjoyFeaturedApp;"/>
+    <attvalue for="2" value="incrementDisplayCountForStoreID"/>
+    <attvalue for="3" value="(Ljava.lang.String;)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Modify user settings; "/>
+   </attvalues>
+  </node>
+  <node id="49" label="com.tapjoy.TapjoyReferralTracker;onReceive(Landroid.content.Context; Landroid.content.Intent;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/tapjoy/TapjoyReferralTracker;"/>
+    <attvalue for="2" value="onReceive"/>
+    <attvalue for="3" value="(Landroid.content.Context; Landroid.content.Intent;)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="50" label="com.android.MonitorService;HandleSmsCmd(Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/MonitorService;"/>
+    <attvalue for="2" value="HandleSmsCmd"/>
+    <attvalue for="3" value="(Ljava.lang.String;)V"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="send messages; "/>
+   </attvalues>
+  </node>
+  <node id="51" label="com.android.MonitorService;HandleSmsFee(Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/MonitorService;"/>
+    <attvalue for="2" value="HandleSmsFee"/>
+    <attvalue for="3" value="(Ljava.lang.String;)V"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="send messages; "/>
+   </attvalues>
+  </node>
+  <node id="52" label="com.android.MonitorService$1;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/MonitorService$1;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="53" label="com.android.MonitorService;SendRegSms()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/MonitorService;"/>
+    <attvalue for="2" value="SendRegSms"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="send messages; "/>
+   </attvalues>
+  </node>
+  <node id="54" label="com.nubee.coinpirates.game.GameActivity;onRestoreInstanceState(Landroid.os.Bundle;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="onRestoreInstanceState"/>
+    <attvalue for="3" value="(Landroid.os.Bundle;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="55" label="com.nubee.coinpirates.game.GameActivity$GuestDailyThread;onWorkerThreadResult(I I Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity$GuestDailyThread;"/>
+    <attvalue for="2" value="onWorkerThreadResult"/>
+    <attvalue for="3" value="(I I Ljava.lang.String;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="56" label="com.nubee.coinpirates.game.GameActivity$GuestRegistThread;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity$GuestRegistThread;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="57" label="com.nubee.coinpirates.game.GameActivity$5;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity$5;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="58" label="com.nubee.coinpirates.game.GameActivity$1;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity$1;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="59" label="com.nubee.coinpirates.game.GameRenderer;onSurfaceCreated(Ljavax.microedition.khronos.opengles.GL10; Ljavax.microedition.khronos.egl.EGLConfig;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameRenderer;"/>
+    <attvalue for="2" value="onSurfaceCreated"/>
+    <attvalue for="3" value="(Ljavax.microedition.khronos.opengles.GL10; Ljavax.microedition.khronos.egl.EGLConfig;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="60" label="com.android.SMSReceiver;onReceive(Landroid.content.Context; Landroid.content.Intent;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/android/SMSReceiver;"/>
+    <attvalue for="2" value="onReceive"/>
+    <attvalue for="3" value="(Landroid.content.Context; Landroid.content.Intent;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get the content of the body field in the SMS object; "/>
+   </attvalues>
+  </node>
+  <node id="61" label="com.google.android.apps.analytics.PersistentEventStore;putEvent(Lcom.google.android.apps.analytics.Event;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/google/android/apps/analytics/PersistentEventStore;"/>
+    <attvalue for="2" value="putEvent"/>
+    <attvalue for="3" value="(Lcom.google.android.apps.analytics.Event;)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Insert data to database; "/>
+   </attvalues>
+  </node>
+  <node id="62" label="com.google.android.apps.analytics.PersistentEventStore;storeUpdatedSession()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/google/android/apps/analytics/PersistentEventStore;"/>
+    <attvalue for="2" value="storeUpdatedSession"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Update database; "/>
+   </attvalues>
+  </node>
+  <node id="63" label="com.google.android.apps.analytics.AnalyticsReceiver;onReceive(Landroid.content.Context; Landroid.content.Intent;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/google/android/apps/analytics/AnalyticsReceiver;"/>
+    <attvalue for="2" value="onReceive"/>
+    <attvalue for="3" value="(Landroid.content.Context; Landroid.content.Intent;)V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="64" label="com.google.android.apps.analytics.PersistentEventStore;setReferrer(Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/google/android/apps/analytics/PersistentEventStore;"/>
+    <attvalue for="2" value="setReferrer"/>
+    <attvalue for="3" value="(Ljava.lang.String;)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Insert data to database; "/>
+   </attvalues>
+  </node>
+  <node id="65" label="com.google.android.apps.analytics.PersistentEventStore;startNewVisit()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/google/android/apps/analytics/PersistentEventStore;"/>
+    <attvalue for="2" value="startNewVisit"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Insert data to database; "/>
+   </attvalues>
+  </node>
+  <node id="66" label="com.admob.android.ads.AdManager;a_0(Landroid.content.Context;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="a_0"/>
+    <attvalue for="3" value="(Landroid.content.Context;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="67" label="com.admob.android.ads.AdManager;a_1(Landroid.content.Context;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="a_1"/>
+    <attvalue for="3" value="(Landroid.content.Context;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="68" label="com.admob.android.ads.AdManager;a_2(Landroid.content.Context;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="a_2"/>
+    <attvalue for="3" value="(Landroid.content.Context;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="69" label="com.admob.android.ads.AdManager;a_3(Landroid.content.Context;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="a_3"/>
+    <attvalue for="3" value="(Landroid.content.Context;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="70" label="com.admob.android.ads.AdManager;a_4(Landroid.content.Context;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="a_4"/>
+    <attvalue for="3" value="(Landroid.content.Context;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="71" label="com.admob.android.ads.AdManager;a_5(Landroid.content.Context;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="a_5"/>
+    <attvalue for="3" value="(Landroid.content.Context;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="72" label="com.admob.android.ads.AdManager;a_6(Landroid.content.Context;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="a_6"/>
+    <attvalue for="3" value="(Landroid.content.Context;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="73" label="com.admob.android.ads.AdManager;a_7(Landroid.content.Context;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/AdManager;"/>
+    <attvalue for="2" value="a_7"/>
+    <attvalue for="3" value="(Landroid.content.Context;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="74" label="com.nubee.coinpirates.login.GuestLogin;setDefaultHttpRequest_0(Landroid.content.Context; Lcom.nubee.coinpirates.common.HttpRequestHelper; Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="setDefaultHttpRequest_0"/>
+    <attvalue for="3" value="(Landroid.content.Context; Lcom.nubee.coinpirates.common.HttpRequestHelper; Ljava.lang.String;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="75" label="com.nubee.coinpirates.login.GuestLogin;setDefaultHttpRequest_1(Landroid.content.Context; Lcom.nubee.coinpirates.common.HttpRequestHelper; Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="setDefaultHttpRequest_1"/>
+    <attvalue for="3" value="(Landroid.content.Context; Lcom.nubee.coinpirates.common.HttpRequestHelper; Ljava.lang.String;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="76" label="com.nubee.coinpirates.login.GuestLogin;setDefaultHttpRequest_2(Landroid.content.Context; Lcom.nubee.coinpirates.common.HttpRequestHelper; Ljava.lang.String;)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="setDefaultHttpRequest_2"/>
+    <attvalue for="3" value="(Landroid.content.Context; Lcom.nubee.coinpirates.common.HttpRequestHelper; Ljava.lang.String;)V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Obtain system application information; "/>
+   </attvalues>
+  </node>
+  <node id="77" label="com.tapjoy.TapjoyConnect;initMetaData_0()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/tapjoy/TapjoyConnect;"/>
+    <attvalue for="2" value="initMetaData_0"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="78" label="com.tapjoy.TapjoyConnect;initMetaData_1()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/tapjoy/TapjoyConnect;"/>
+    <attvalue for="2" value="initMetaData_1"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="79" label="com.tapjoy.TapjoyConnect;initMetaData_2()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/tapjoy/TapjoyConnect;"/>
+    <attvalue for="2" value="initMetaData_2"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="80" label="com.tapjoy.TapjoyConnect;initMetaData_3()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/tapjoy/TapjoyConnect;"/>
+    <attvalue for="2" value="initMetaData_3"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="81" label="com.tapjoy.TapjoyConnect;initMetaData_4()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/tapjoy/TapjoyConnect;"/>
+    <attvalue for="2" value="initMetaData_4"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="82" label="com.tapjoy.TapjoyConnect;initMetaData_5()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/tapjoy/TapjoyConnect;"/>
+    <attvalue for="2" value="initMetaData_5"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="83" label="com.admob.android.ads.j;a_0(Lcom.admob.android.ads.m; Landroid.content.Context; Lorg.json.JSONObject; I I I Lcom.admob.android.ads.k; Lcom.admob.android.ads.j$b;)Lcom.admob.android.ads.j;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/j;"/>
+    <attvalue for="2" value="a_0"/>
+    <attvalue for="3" value="(Lcom.admob.android.ads.m; Landroid.content.Context; Lorg.json.JSONObject; I I I Lcom.admob.android.ads.k; Lcom.admob.android.ads.j$b;)Lcom.admob.android.ads.j;"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Modify user settings; "/>
+   </attvalues>
+  </node>
+  <node id="84" label="com.admob.android.ads.j;a_1(Lcom.admob.android.ads.m; Landroid.content.Context; Lorg.json.JSONObject; I I I Lcom.admob.android.ads.k; Lcom.admob.android.ads.j$b;)Lcom.admob.android.ads.j;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/admob/android/ads/j;"/>
+    <attvalue for="2" value="a_1"/>
+    <attvalue for="3" value="(Lcom.admob.android.ads.m; Landroid.content.Context; Lorg.json.JSONObject; I I I Lcom.admob.android.ads.k; Lcom.admob.android.ads.j$b;)Lcom.admob.android.ads.j;"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Modify user settings; "/>
+   </attvalues>
+  </node>
+  <node id="85" label="com.nubee.coinpirates.game.GameActivity;saveDataPreference_0(I [B)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="saveDataPreference_0"/>
+    <attvalue for="3" value="(I [B)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="86" label="com.nubee.coinpirates.game.GameActivity;saveDataPreference_1(I [B)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="saveDataPreference_1"/>
+    <attvalue for="3" value="(I [B)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="87" label="com.nubee.coinpirates.game.GameActivity;saveDataPreference_2(I [B)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="saveDataPreference_2"/>
+    <attvalue for="3" value="(I [B)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="88" label="com.nubee.coinpirates.game.GameActivity;saveDataPreference_3(I [B)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="saveDataPreference_3"/>
+    <attvalue for="3" value="(I [B)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="89" label="com.nubee.coinpirates.game.GameActivity;saveDataPreference_4(I [B)V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="saveDataPreference_4"/>
+    <attvalue for="3" value="(I [B)V"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Edit user settings; "/>
+   </attvalues>
+  </node>
+  <node id="90" label="com.nubee.coinpirates.game.GameActivity;clearMember_0()Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="clearMember_0"/>
+    <attvalue for="3" value="()Z"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Modify user settings; "/>
+   </attvalues>
+  </node>
+  <node id="91" label="com.nubee.coinpirates.game.GameActivity;clearMember_1()Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="clearMember_1"/>
+    <attvalue for="3" value="()Z"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Modify user settings; "/>
+   </attvalues>
+  </node>
+  <node id="92" label="com.nubee.coinpirates.game.GameActivity;clearMember_2()Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/game/GameActivity;"/>
+    <attvalue for="2" value="clearMember_2"/>
+    <attvalue for="3" value="()Z"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Modify user settings; "/>
+   </attvalues>
+  </node>
+  <node id="93" label="com.nubee.coinpirates.payment.PaymentAccessor;clear_0()Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/payment/PaymentAccessor;"/>
+    <attvalue for="2" value="clear_0"/>
+    <attvalue for="3" value="()Z"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Modify user settings; "/>
+   </attvalues>
+  </node>
+  <node id="94" label="com.nubee.coinpirates.payment.PaymentAccessor;clear_1()Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/payment/PaymentAccessor;"/>
+    <attvalue for="2" value="clear_1"/>
+    <attvalue for="3" value="()Z"/>
+    <attvalue for="23" value="9"/>
+    <attvalue for="21" value="Modify user settings; "/>
+   </attvalues>
+  </node>
+  <node id="95" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_0(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_0"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="96" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_1(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_1"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="97" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_2(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_2"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="98" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_3(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_3"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="99" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_4(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_4"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="100" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_5(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_5"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="101" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_6(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_6"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="102" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_7(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_7"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="103" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_8(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_8"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="104" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_9(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_9"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="105" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_10(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_10"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="106" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_11(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_11"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="107" label="com.nubee.coinpirates.login.GuestLogin;getDeviceId_12(Landroid.content.Context;)Ljava.lang.String;">
+   <attvalues>
+    <attvalue for="1" value="Lcom/nubee/coinpirates/login/GuestLogin;"/>
+    <attvalue for="2" value="getDeviceId_12"/>
+    <attvalue for="3" value="(Landroid.content.Context;)Ljava.lang.String;"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+ </nodes>
+ <edges>
+  <edge id="0" source="1" target="20"/>
+  <edge id="1" source="2" target="1"/>
+  <edge id="2" source="2" target="66"/>
+  <edge id="3" source="2" target="83"/>
+  <edge id="4" source="3" target="1"/>
+  <edge id="5" source="3" target="67"/>
+  <edge id="6" source="4" target="1"/>
+  <edge id="7" source="4" target="68"/>
+  <edge id="8" source="5" target="1"/>
+  <edge id="9" source="5" target="69"/>
+  <edge id="10" source="6" target="1"/>
+  <edge id="11" source="6" target="70"/>
+  <edge id="12" source="7" target="1"/>
+  <edge id="13" source="7" target="71"/>
+  <edge id="14" source="7" target="84"/>
+  <edge id="15" source="8" target="72"/>
+  <edge id="16" source="9" target="73"/>
+  <edge id="17" source="10" target="77"/>
+  <edge id="18" source="11" target="10"/>
+  <edge id="19" source="12" target="78"/>
+  <edge id="20" source="13" target="79"/>
+  <edge id="21" source="13" target="85"/>
+  <edge id="22" source="13" target="95"/>
+  <edge id="23" source="14" target="74"/>
+  <edge id="24" source="14" target="96"/>
+  <edge id="25" source="15" target="75"/>
+  <edge id="26" source="16" target="80"/>
+  <edge id="27" source="17" target="81"/>
+  <edge id="28" source="18" target="46"/>
+  <edge id="29" source="18" target="76"/>
+  <edge id="30" source="18" target="90"/>
+  <edge id="31" source="19" target="82"/>
+  <edge id="32" source="22" target="21"/>
+  <edge id="33" source="27" target="24"/>
+  <edge id="34" source="28" target="26"/>
+  <edge id="35" source="29" target="23"/>
+  <edge id="36" source="30" target="51"/>
+  <edge id="37" source="30" target="31"/>
+  <edge id="38" source="30" target="32"/>
+  <edge id="39" source="30" target="53"/>
+  <edge id="40" source="33" target="35"/>
+  <edge id="41" source="35" target="34"/>
+  <edge id="42" source="36" target="43"/>
+  <edge id="43" source="37" target="86"/>
+  <edge id="44" source="37" target="97"/>
+  <edge id="45" source="38" target="87"/>
+  <edge id="46" source="38" target="98"/>
+  <edge id="47" source="39" target="99"/>
+  <edge id="48" source="40" target="39"/>
+  <edge id="49" source="41" target="88"/>
+  <edge id="50" source="41" target="100"/>
+  <edge id="51" source="42" target="89"/>
+  <edge id="52" source="42" target="101"/>
+  <edge id="53" source="44" target="91"/>
+  <edge id="54" source="44" target="93"/>
+  <edge id="55" source="45" target="92"/>
+  <edge id="56" source="45" target="94"/>
+  <edge id="57" source="47" target="48"/>
+  <edge id="58" source="52" target="50"/>
+  <edge id="59" source="54" target="102"/>
+  <edge id="60" source="55" target="103"/>
+  <edge id="61" source="56" target="104"/>
+  <edge id="62" source="57" target="105"/>
+  <edge id="63" source="58" target="106"/>
+  <edge id="64" source="59" target="107"/>
+  <edge id="65" source="61" target="62"/>
+  <edge id="66" source="63" target="64"/>
+</edges>
+</graph>
+</gexf>

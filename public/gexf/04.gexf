@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gephi.org/gexf" xmlns:viz="http://www.gephi.org/gexf/viz">
+<graph type="static">
+ <attributes class="node" type="static">
+  <attribute id="0" title="type" type="string"/>
+  <attribute id="1" title="class_name" type="string"/>
+  <attribute id="2" title="method_name" type="string"/>
+  <attribute id="3" title="descriptor" type="string"/>
+  <attribute id="4" title="permissions" type="string"/>
+  <attribute id="5" title="permissions_level" type="string"/>
+  <attribute id="6" title="code" type="string"/>
+  <attribute id="7" title="java" type="string"/>
+  <attribute id="8" title="securityLabel" type="string"/>
+  <attribute id="9" title="ds_info" type="string"/>
+  <attribute id="10" title="ids_info" type="string"/>
+  <attribute id="11" title="activity" type="string"/>
+  <attribute id="12" title="service" type="string"/>
+  <attribute id="13" title="receiver" type="string"/>
+  <attribute id="14" title="provider" type="string"/>
+  <attribute id="15" title="extracallee" type="string"/>
+  <attribute id="16" title="caller" type="string"/>
+  <attribute id="17" title="Adware" type="string"/>
+  <attribute id="18" title="Jnicall" type="string"/>
+  <attribute id="19" title="api_sendinfo" type="string"/>
+  <attribute id="20" title="api_getinfo" type="string"/>
+  <attribute id="21" title="api_else" type="string"/>
+  <attribute id="22" title="riscky_string" type="string"/>
+  <attribute id="23" title="type Class" type="integer"/>
+  <attribute id="24" title="related" type="string"/>
+  <attribute id="25" title="unique" type="string"/>
+ </attributes>
+ <nodes>
+  <node id="0" label="com.networkintercept.adrenaline2.StunnelAndroid$1$2;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/networkintercept/adrenaline2/StunnelAndroid$1$2;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="1" label="com.networkintercept.adrenaline2.StunnelAndroid$4$1$1;run()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/networkintercept/adrenaline2/StunnelAndroid$4$1$1;"/>
+    <attvalue for="2" value="run"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="1"/>
+    <attvalue for="21" value=""/>
+   </attvalues>
+  </node>
+  <node id="2" label="com.networkintercept.adrenaline2.Utils;saveURL(Landroid.content.Context; Ljava.lang.String; Ljava.lang.String;)Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/networkintercept/adrenaline2/Utils;"/>
+    <attvalue for="2" value="saveURL"/>
+    <attvalue for="3" value="(Landroid.content.Context; Ljava.lang.String; Ljava.lang.String;)Z"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="3" label="com.networkintercept.adrenaline2.StunnelAndroid;postSerial()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/networkintercept/adrenaline2/StunnelAndroid;"/>
+    <attvalue for="2" value="postSerial"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="4" label="com.networkintercept.adrenaline2.StunnelAndroid;performInitialChecks_0()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/networkintercept/adrenaline2/StunnelAndroid;"/>
+    <attvalue for="2" value="performInitialChecks_0"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="5" label="com.networkintercept.adrenaline2.StunnelAndroid;performInitialChecks_1()V">
+   <attvalues>
+    <attvalue for="1" value="Lcom/networkintercept/adrenaline2/StunnelAndroid;"/>
+    <attvalue for="2" value="performInitialChecks_1"/>
+    <attvalue for="3" value="()V"/>
+    <attvalue for="23" value="3"/>
+    <attvalue for="21" value="Get device IMEI, MEID, ESN; "/>
+   </attvalues>
+  </node>
+  <node id="6" label="com.networkintercept.adrenaline2.Utils;urlExists_0(Ljava.lang.String;)Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/networkintercept/adrenaline2/Utils;"/>
+    <attvalue for="2" value="urlExists_0"/>
+    <attvalue for="3" value="(Ljava.lang.String;)Z"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+  <node id="7" label="com.networkintercept.adrenaline2.Utils;urlExists_1(Ljava.lang.String;)Z">
+   <attvalues>
+    <attvalue for="1" value="Lcom/networkintercept/adrenaline2/Utils;"/>
+    <attvalue for="2" value="urlExists_1"/>
+    <attvalue for="3" value="(Ljava.lang.String;)Z"/>
+    <attvalue for="23" value="5"/>
+    <attvalue for="21" value="Has network connection behavior; "/>
+   </attvalues>
+  </node>
+ </nodes>
+ <edges>
+  <edge id="0" source="0" target="3"/>
+  <edge id="1" source="0" target="2"/>
+  <edge id="2" source="0" target="4"/>
+  <edge id="3" source="0" target="6"/>
+  <edge id="4" source="1" target="5"/>
+  <edge id="5" source="1" target="7"/>
+</edges>
+</graph>
+</gexf>

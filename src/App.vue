@@ -50,4 +50,8 @@ import locale from 'element-plus/lib/locale/lang/zh-cn'//设置elmui全局国际
   background: rgba(0, 0, 0, 0.1);
 
 }
+
+#nprogress .bar{//进度条样式
+    background: rgb(167, 132, 88) !important;
+}
 </style>

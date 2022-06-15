@@ -20,7 +20,7 @@
             <div class="lunbo-box">
                 <div v-for="virus of virusobjs" key="virus.id">
                     <div class="lunbogeli">
-                        <img :src="virus.img" alt="">
+                        <img style="cursor: pointer;" @click="tiaozhuan(virus.img, virus.name)" :src="virus.img" alt="">
                         <p style=" font-size: 15px;">{{ virus.name }}</p>
                     </div>
                 </div>
@@ -47,148 +47,138 @@
             <el-button size="large" type="primary">搜索</el-button>
         </div>
 
-        <div class="bottom">
-            <div class="shuxian"></div>
-            <p class="lx">联系我们</p>
-            <p class="yx">邮箱:xxxxxxx</p>
-            <p class="dz">地址:xxxxxxx</p>
-            <p class="bq">版权所有 ©xxxxx</p>
-            <p class="yd">移动应用安全检测</p>
-
-
-        </div>
     </div>
 </template>
 
 
 <script lang="ts">
 import { defineComponent, ref, reactive } from "vue"
-
+import { useRouter } from "vue-router"
 export default defineComponent({
     setup() {
+        let router =useRouter()
         const virusobjs = reactive([
             {
                 id: 1,
                 img: '/virusimg/01.jpg',
-                name: '01',
+                name: '01病毒',
             },
             {
                 id: 2,
                 img: '/virusimg/02.jpg',
-                name: '02',
+                name: '02病毒',
             },
             {
                 id: 3,
                 img: '/virusimg/03.jpg',
-                name: '03',
+                name: '03病毒',
             },
             {
                 id: 4,
                 img: '/virusimg/04.jpg',
-                name: '04',
+                name: '04病毒',
             },
             {
                 id: 5,
                 img: '/virusimg/05.jpg',
-                name: '05',
+                name: '05病毒',
             },
             {
                 id: 6,
                 img: '/virusimg/06.jpg',
-                name: '06',
+                name: '06病毒',
             }
             ,
             {
                 id: 7,
                 img: '/virusimg/06.jpg',
-                name: '07',
+                name: '07病毒',
             }
             ,
             {
                 id: 8,
                 img: '/virusimg/06.jpg',
-                name: '08',
+                name: '08病毒',
             }, {
                 id: 1,
                 img: '/virusimg/01.jpg',
-                name: '01',
+                name: '01病毒',
             },
             {
                 id: 2,
                 img: '/virusimg/02.jpg',
-                name: '02',
+                name: '02病毒',
             },
             {
                 id: 3,
                 img: '/virusimg/03.jpg',
-                name: '03',
+                name: '03病毒',
             },
             {
                 id: 4,
                 img: '/virusimg/04.jpg',
-                name: '04',
+                name: '04病毒',
             },
             {
                 id: 5,
                 img: '/virusimg/05.jpg',
-                name: '05',
+                name: '05病毒',
             },
             {
                 id: 6,
                 img: '/virusimg/06.jpg',
-                name: '06',
+                name: '06病毒',
             }
             ,
             {
                 id: 7,
                 img: '/virusimg/06.jpg',
-                name: '07',
+                name: '07病毒',
             }
             ,
             {
                 id: 8,
                 img: '/virusimg/06.jpg',
-                name: '08',
+                name: '08病毒',
             }
             ,
             {
                 id: 6,
                 img: '/virusimg/06.jpg',
-                name: '06',
+                name: '06病毒',
             }
             ,
             {
                 id: 7,
                 img: '/virusimg/06.jpg',
-                name: '07',
+                name: '07病毒',
             }
             ,
             {
                 id: 8,
                 img: '/virusimg/06.jpg',
-                name: '08',
+                name: '08病毒',
             }
             ,
             {
                 id: 6,
                 img: '/virusimg/06.jpg',
-                name: '06',
+                name: '06病毒',
             }
             ,
             {
                 id: 7,
                 img: '/virusimg/06.jpg',
-                name: '07',
+                name: '07病毒',
             }
             ,
             {
                 id: 8,
                 img: '/virusimg/06.jpg',
-                name: '08',
+                name: '08病毒',
             }
         ])
         const value = ref('')
-
         const options = [
             {
                 value: 'Option1',
@@ -211,7 +201,15 @@ export default defineComponent({
                 label: 'Option5',
             },
         ]
-        return { virusobjs, value, options }
+        const tiaozhuan = (img: string, name: string) => {
+            router.push({
+                name: 'show',
+                query:{
+                    img,name
+                }
+            })
+        }
+        return { virusobjs, value, options, tiaozhuan }
     }
 })
 
@@ -219,9 +217,9 @@ export default defineComponent({
 
 
 <style lang="less" scoped>
-@import './box1.less';
-@import './box2.less';
-@import './box3.less';
+@import './less/box1.less';
+@import './less/box2.less';
+@import './less/box3.less';
 @ziti: 宋体;
 
 p {

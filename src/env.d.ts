@@ -6,3 +6,6 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>
   export default component
 }
+declare module 'jquery';
+declare module 'echarts/extension-src/dataTool';
+declare module 'echarts'
