@@ -1,0 +1,57 @@
+.box2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-color: #f2f2f2;
+
+
+
+    p:nth-of-type(1) {
+        font-size: 40px;
+    }
+
+    p:nth-of-type(2) {
+        width: 800px;
+    }
+
+    .lunbo {
+
+
+        background-color: #ffffff;
+        border-radius: 10px;
+        width: 1000px;
+        height: 530px;
+        transition-property: box-shadow;
+        transition-duration: 0.5s
+    }
+
+    .lunbo:hover {
+        box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    .lunbo-box {
+        overflow-x: scroll;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        flex-basis: 90%;
+        width: 90%;
+        height: 90%;
+    }
+
+    img {
+        width: 150px;
+        height: 100px;
+    }
+
+
+    .lunbogeli {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

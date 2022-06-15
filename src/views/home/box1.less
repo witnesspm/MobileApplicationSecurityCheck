@@ -1,0 +1,44 @@
+.box{
+    height: 440px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    img{
+      
+      position: absolute;
+      top: 420px;
+      width: 200px;
+      height: 200px;
+      transition-property:transform;
+      transition-duration:0.5s
+    }
+     img:hover{
+      transform:rotateZ(180deg);
+    }
+    p:first-child{
+     
+      font-size: 30px;
+      color: rgb(126, 123, 120);
+    }
+    p:nth-of-type(2){
+      
+      font-size: 50px;
+    }
+  }
+  .xiahuaxian{
+      width: 50px;
+      height: 10px;
+      border-bottom:3px solid rgb(167,132,88);
+  }
+  .bg{
+      z-index: -1;
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background-color: #ffffff;
+        background-image:
+                  radial-gradient(closest-side, rgb(244, 226, 204), rgba(235, 105, 78, 0)),
+                  
+  }

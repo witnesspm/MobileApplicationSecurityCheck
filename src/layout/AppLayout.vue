@@ -1,7 +1,9 @@
 <template>
-    <div class="top">
-        <Top />
+    <div>
         
+        <div class="top">
+
+        </div>
         <div class="AppMenu">
             <AppMenu />
         </div>
@@ -19,14 +21,16 @@
 
 <script lang="ts" setup>
 import AppMenu from './components/AppMenu.vue'
-import Top from './components/Top.vue'
 </script>
 
 <style lang="less" scoped>
 .top {
-
+    
+    height: 10px;
     background-color: #ffffff;
 }
 
-.AppMenu {}
+.AppMenu {
+    
+}
 </style>
