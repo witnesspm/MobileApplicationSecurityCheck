@@ -21,7 +21,7 @@
             <p class="yx">邮箱:xxxxxxx</p>
             <p class="dz">地址:xxxxxxx</p>
             <p class="bq">版权所有 ©xxxxx</p>
-            <p class="yd">移动应用安全检测</p>
+            <p class="yd">应用安全检测系统</p>
 
 
         </div>

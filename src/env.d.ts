@@ -9,3 +9,4 @@ declare module '*.vue' {
 declare module 'jquery';
 declare module 'echarts/extension-src/dataTool';
 declare module 'echarts'
+declare module 'throttle-debounce';

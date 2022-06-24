@@ -54,4 +54,18 @@ import locale from 'element-plus/lib/locale/lang/zh-cn'//设置elmui全局国际
 #nprogress .bar{//进度条样式
     background: rgb(167, 132, 88) !important;
 }
+
+.m-top160 {
+    margin-top: 160px;
+}
+
+.m-top120 {
+
+    margin-top: 120px;
+}
+
+.w10 {
+    width: 10px;
+}
+
 </style>
