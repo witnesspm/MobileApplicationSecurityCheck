@@ -1,15 +1,19 @@
 <template>
   <!-- 显示html内容 -->
   <div class="box">
+    <p class="zuozhe">{{ blog[0]?.blog_title }}</p>
     <div class="xiahuaxian"></div>
-    <p class="biaoti">{{ blog[0]?.blog_title }}</p>
-    <div class="ql-editor">
-    <div v-html="blog[0]?.blog_content"></div>
-  </div>
+    <p class="biaoti">{{ blog[0]?.release_people }}</p>
+    <div class="show-component">
+      <div class="ql-container ql-snow">
+        <div class="ql-editor" v-html="blog[0]?.blog_content"></div>
+      </div>
+    </div>
+
   </div>
 
   <div class="foot">
-      <p class="zuozhe">{{ blog[0]?.release_people }}</p>
+    
     <p class="riqi">{{ blog[0]?.release_date }}</p>
   </div>
 
@@ -17,6 +21,7 @@
 
 <script lang="ts" setup>
 import axios from "axios"
+import { getablog } from '../../../api/api'
 import { ElMessage } from "element-plus"
 import { defineComponent, onMounted, reactive, ref } from "vue"
 import { useRouter } from "vue-router"
@@ -27,15 +32,10 @@ const blog_id = router.currentRoute.value.query.id
 //获取所有博客信息
 let blog: any = reactive([])
 const getblog = async () => {
-  await axios({
-    method: 'post',
-    data: { blog_id },
-    url: 'api/getblog',//这里由于之前设置了baseURL,所以直接跳过顶级域名
-  })
+  await 
+  getablog({blog_id})
     .then(function (response: any) {
-      console.log(response)
       blog.push(response.data.data[0])
-      console.log(blog[0])
     })
     .catch(function (error: any) {
       console.log("catch" + error);
@@ -44,7 +44,7 @@ const getblog = async () => {
     });
 }
 onMounted(async () => {
- await getblog()
+  await getblog()
   if (blog.length == 0) {
     router.push({
       name: 'c404',
@@ -55,34 +55,57 @@ onMounted(async () => {
 </script>
 
 <style lang="less" scoped>
+@ziti: 宋体;
+
+p {
+    font-family: @ziti;
+}
 .box {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-  .xiahuaxian{
-    margin-top: 10%;
-      width: 50px;
-      height: 10px;
-      border-bottom:3px solid rgb(167,132,88);
+.zuozhe{
+  margin-top: 10%;
+   font-size: 30px;
+}
+.xiahuaxian {
+  
+  width: 50px;
+  height: 10px;
+  border-bottom: 3px solid rgb(167, 132, 88);
+}
+
+.riqi {
+  font-size: 12px;
+  color: rgb(125, 125, 125);
+}
+
+.foot {
+  margin-top: 200px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.biaoti {
+ 
+  margin-bottom: 100px;
+}
+
+.show-component {
+  width: 1000px;
+  // 编写自定义展示情况
+  .ql-container {
+
+    // 可以根据需要编写一些内容
+    // 例如：展示的img图片大小默认改为90%宽度
+    .ql-editor {
+      img {
+        width: 90%; // 这样所有的图片都会只有90%的宽度
+      }
+    }
   }
-  .riqi{
-    font-size: 12px;
-    color: rgb(125, 125, 125);
-  }
-  .foot{
-    margin-top: 200px;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
-  .biaoti{
-    font-size: 50px;
-    font-weight: bolder;
-    margin-bottom: 100px;
-  }
-  .ql-editor{
-    width: 80%;
-  }
+}
 </style>

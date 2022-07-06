@@ -4,7 +4,7 @@
       <h1>发布博客</h1>
       <div class="blog_title">
         <h3>博客标题</h3>
-        <el-input v-model="blog_title" maxlength="10" placeholder="请输入博客标题" show-word-limit type="text" />
+        <el-input v-model="blog_title" maxlength="50" placeholder="请输入博客标题" show-word-limit type="text" />
       </div>
       <div class="blog_content">
         <h3>博客内容</h3>
@@ -45,7 +45,7 @@ import Editor from '../../../components/editor.vue'
 import { ElMessage } from 'element-plus'
 import { Plus } from '@element-plus/icons-vue'
 import type { UploadProps } from 'element-plus'
-import axios from 'axios'
+import { add_blog } from '../../../api/api'
 import { useRouter } from "vue-router"
 export default defineComponent({
   components: {
@@ -103,17 +103,10 @@ export default defineComponent({
         ElMessage.error('标题/封面/发布人禁止为空！')
         return false
       }
-      axios({
-        method: 'post',
-        url: 'api/add_blog',//这里由于之前设置了baseURL,所以直接跳过顶级域名
-        data: {
-          blog_title: blog_title.value,
+      add_blog({  blog_title: blog_title.value,
           blog_cover: blog_cover.value,
           blog_content: blog_content._value.content,
-          release_people: release_people.value
-
-        }
-      })
+          release_people: release_people.value})
         .then(function (response: any) {
           console.log(response)
           if (response.data.status == '0') {

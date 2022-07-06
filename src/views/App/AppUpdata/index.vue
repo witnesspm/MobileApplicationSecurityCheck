@@ -71,232 +71,88 @@
 
     </v-contextmenu>
 
+    <div class="box">
+        <el-row>
+            <el-col :span="20">
+                <div class="zhanshiqu">
+                    <div class="is_kx">
+                        开启框选：
+                        <el-switch v-model="is_kx" />
+                    </div>
 
-    <div class="box1">
-        <div class="box1-img">
-            <img src="../../../assets/left_k.png" style=" width:48.5px ;height: 201.75px;" alt="" />
-            <img class="virusimg" :src="virusimg" alt="" />
-            <img src="../../../assets/right_k.png" style=" width:48.5px ;height: 201.75px;" alt="" />
-        </div>
+                    <div class="mask" v-show="kxxs"
+                        :style="'width:' + wwww + 'px;' + 'left:' + start_x + 'px;' + 'height:' + hhhh + 'px;' + 'top:' + start_y + 'px;'">
+                    </div>
+                    <div id="main" class="main"> </div>
 
-        <div class="xiahuaxian m-top20"></div>
-        <p class="virusname">{{ virusname }}</p>
-        <p>病毒简介:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+                </div>
+
+            </el-col>
+            <el-col :span="4">
+                <div class="gongnengqu">
+                    <div class="gnq-title">
+                        目前已选节点(左键图表中节点)
+                        <div class="nodeid">
+                            <el-input v-model="nodeid_arr" autosize type="textarea" disabled placeholder="未选中节点" />
+                        </div>
+                        功能区
+                        <div class="demo-collapse">
+                            <el-collapse v-model="zhedie">
+                                <el-collapse-item title="增删节点" name="1">
+                                    <div class="tubiaoneirong">
+                                        <el-tooltip class="box-item" effect="dark" content="添加节点" placement="bottom">
+                                            <div @click="addnode" class="kongjian">
+                                                <el-icon>
+                                                    <Coordinate />
+                                                </el-icon>
+                                            </div>
+                                        </el-tooltip>
+                                        <el-tooltip class="box-item" effect="dark" content="删除节点" placement="bottom">
+                                            <div @click="delenode" class="kongjian">
+                                                <el-icon>
+                                                    <Failed />
+                                                </el-icon>
+                                            </div>
+                                        </el-tooltip>
+
+
+
+
+
+
+                                    </div>
+                                </el-collapse-item>
+                                <el-collapse-item title="连接节点" name="2">
+                                    <div class="tubiaoneirong1">
+                                        <el-input v-model="nodeid" disabled placeholder="节点1(左键点击图表节点)" />
+                                        <el-icon>
+                                            <Share />
+                                        </el-icon>
+                                        <el-input v-model="nodeid2" disabled placeholder="节点2(右键点击图表节点)" />
+                                        <el-button type="primary" @click="ljnode" class="tuichu">连接/解除连接</el-button>
+
+                                    </div>
+                                </el-collapse-item>
+                            </el-collapse>
+
+                        </div>
+
+                    </div>
+                    <el-button type="primary" @click="toback" class="tuichu">退出编辑模式</el-button>
+
+
+                </div>
+            </el-col>
+        </el-row>
     </div>
-    <div class="box2">
-        <div class="box2-top">
-            <el-button type="primary" :icon="Back" @click="back" circle />
-            <el-divider>
-                <p>APP基础信息</p>
-            </el-divider>
-        </div>
-        <div class="box2-body">
-            <el-card class="box-card xinxi1">
-                <el-descriptions class="margin-top" :column="1" :size="size" border>
-
-                    <el-descriptions-item>
-                        <template #label>
-                            <div class="cell-item">
-                                app名称
-                                <p class="narrow">大小</p>
-                            </div>
-                        </template>
-                        <div class="Descriptions-neirong">
-                            妖精社区
-                            <p class="narrow">2.26MB</p>
-                        </div>
-
-                    </el-descriptions-item>
-                    <el-descriptions-item>
-                        <template #label>
-                            <div class="cell-item">
-                                文件名
-                                <p class="narrow">包名</p>
-                                <p class="narrow">主Activity</p>
-                            </div>
-                        </template>
-                        <div class="Descriptions-neirong">
-                            a.apk
-                            <p class="narrow">com.adsjn.fkdns</p>
-                            <p class="narrow">com.ly.dzxs.WelcomeActivity</p>
-                        </div>
-
-                    </el-descriptions-item>
-                    <el-descriptions-item>
-                        <template #label>
-                            <div class="cell-item">
-                                SHA1
-                            </div>
-                        </template>
-                        <div class="Descriptions-neirong">
-                            b1442a72bdce9b628d961ccdb9864a6ea83531aa
-                        </div>
-                    </el-descriptions-item>
-                    <el-descriptions-item>
-                        <template #label>
-                            <div class="cell-item">
-                                SHA256
-                            </div>
-                        </template>
-                        <div class="Descriptions-neirong">
-                            53f9b43d9bff20c6346f51c1cf210470bc3aa202f63ff6aad6df5c1ffe6db1e2
-                        </div>
-                    </el-descriptions-item>
-                    <el-descriptions-item>
-                        <template #label>
-                            <div class="cell-item">
-                                MD5
-                            </div>
-                        </template>
-                        <div class="Descriptions-neirong">
-                            ob29a4267f2c5f2e68475eb40eaecb05</div>
-                    </el-descriptions-item>
-                </el-descriptions>
-            </el-card>
-            <el-card class="box-card xinxi2">
-
-                <el-descriptions class="margin-top" :column="1" :size="size" border>
-
-                    <el-descriptions-item>
-                        <template #label>
-                            <div class="cell-item">
-                                平均Cvss
-                            </div>
-                        </template>
-                        <div class="Descriptions-neirong">
-
-                        </div>
-
-                    </el-descriptions-item>
-                    <el-descriptions-item>
-                        <template #label>
-                            <div class="cell-item">
-                                安全分
-                            </div>
-                        </template>
-                        <div class="Descriptions-neirong">
-                            <div>
-                                <el-tag size="small">跟踪器</el-tag>
-                                <span> 1/407</span>
-                            </div>
-                        </div>
-                    </el-descriptions-item>
-                    <el-descriptions-item>
-                        <template #label>
-                            <div class="cell-item">
-                                Virustotal监测
-                            </div>
-                        </template>
-                        <div class="Descriptions-neirong">
-                            3/56
-                        </div>
-                    </el-descriptions-item>
-                    <el-descriptions-item>
-                        <template #label>
-                            <div class="cell-item">
-                                版本
-                            </div>
-                        </template>
-                        <div class="Descriptions-neirong">
-                            1.967
-                        </div>
-                    </el-descriptions-item>
-                    <el-descriptions-item>
-                        <template #label>
-                            <div class="cell-item">
-                                最大SDK/最小SDK
-                            </div>
-                        </template>
-                        <div class="Descriptions-neirong">
-                            /8</div>
-                    </el-descriptions-item>
-                </el-descriptions>
-            </el-card>
-        </div>
 
 
-        <el-card :class="xiangxitu">
-            <el-tooltip class="box-item" effect="dark" content="全屏" placement="bottom">
-                <el-icon @click="quanping">
-                    <FullScreen class="fangdaicon" />
-                </el-icon>
-            </el-tooltip>
 
-            <el-tooltip class="box-item" effect="dark" content="编辑模式" placement="bottom">
-                <el-icon @click="tobjms">
-                    <Menu class="fangdaicon" />
-                </el-icon>
-            </el-tooltip>
-
-            <!-- 替换右键菜单 -->
-            <!-- <div v-contextmenu:contextmenu id="main" :class="xitu"> </div> -->
-            <div  id="main" :class="xitu"> </div>
-        </el-card>
-        <div class="silie">
-            <el-card class="box-card">
-                <div class="silie-box">
-                    <div class="silie-box-tubiao">
-                        <el-icon>
-                            <UserFilled />
-                        </el-icon>
-                    </div>
-                    <div class="silie-box-xinxi">
-                        <p>+20</p>
-                        <p class="narrow">页面Activities</p>
-                        <p class="narrow">可导出个数为:7</p>
-                    </div>
-                </div>
-            </el-card>
-            <el-card class="box-card ">
-                <div class="silie-box">
-                    <div class="silie-box-tubiao">
-                        <el-icon>
-                            <UserFilled />
-                        </el-icon>
-                    </div>
-                    <div class="silie-box-xinxi">
-                        <p>+24</p>
-                        <p class="narrow">服务SERVICES</p>
-                        <p class="narrow">可导出个数为:2</p>
-                    </div>
-                </div>
-            </el-card>
-            <el-card class="box-card ">
-                <div class="silie-box">
-                    <div class="silie-box-tubiao">
-                        <el-icon>
-                            <UserFilled />
-                        </el-icon>
-                    </div>
-                    <div class="silie-box-xinxi">
-                        <p>+9</p>
-                        <p class="narrow">消息接收器Receivers</p>
-                        <p class="narrow">可导出个数为:8</p>
-                    </div>
-                </div>
-            </el-card>
-            <el-card class="box-card ">
-                <div class="silie-box">
-                    <div class="silie-box-tubiao">
-                        <el-icon>
-                            <UserFilled />
-                        </el-icon>
-                    </div>
-                    <div class="silie-box-xinxi">
-                        <p>+1</p>
-                        <p class="narrow">PROVIDERS</p>
-                        <p class="narrow">可导出个数为:1</p>
-                    </div>
-                </div>
-            </el-card>
-        </div>
-
-    </div>
 </template>
 
 <script lang="ts">
 
-import { nextTick, defineComponent, ref, reactive, onMounted, onBeforeUnmount, toRefs, VNodeProps, VNode, getCurrentInstance } from "vue"
+import { nextTick, defineComponent, ref, reactive, onMounted, onBeforeUnmount, toRefs, VNodeProps, VNode, getCurrentInstance, computed, watch } from "vue"
 import { useRouter } from "vue-router"
 import { Back } from '@element-plus/icons-vue'
 import jq from 'jquery'
@@ -325,11 +181,15 @@ export default defineComponent({
         window.scrollTo(0, 0);//轮动条置顶
         //接受路由传参
         let router = useRouter()
+        const is_kx = ref(false)//是否开启框选
         const virusimg = <string>router.currentRoute.value.query.img
         const virusname = ref(router.currentRoute.value.query.name)
         const size = ref('28px')
         const nodeid = ref('')
+        const nodeid2 = ref('')
         const nextbutton = ref("下一步")
+        //默认打开的折叠面板
+        const zhedie = ref(['1', '2'])
         //添加节点弹窗
         const dialogaddnodeVisible = ref(false)
         const nodelabel = ref('')
@@ -400,6 +260,7 @@ export default defineComponent({
             value.forEach((val: any) => {
                 attvalues_arr_z.push(attvalues_type[val - 1])
             })
+
         }
         //步骤条
         const active = ref("0")
@@ -450,18 +311,34 @@ export default defineComponent({
             else
                 active.value = String(parseInt(active.value) + 1)
         }
+        //框选框，绑定鼠标按下事件
         //定义echarts
         let myChart: any
+        let start_x = ref(), start_y = ref(), end_x = ref(), end_y = ref()
+        let kxxs = ref(false)//框选框是否显示
+        const wwww = computed(() => {  // 传递函数
+            return end_x.value - start_x.value
+        })
+        const hhhh = computed(() => {  // 传递函数
+            return end_y.value - start_y.value
+        })
+
         //返回按钮事件
         const back = () => {
             router.back()
         }
         let gexfwj: any
+        interface model {
+            id: string,
+            x: number,
+        }
+        let model: Array<model> = []//节点id和所在位置
         const echarsinti = async () => {
             myChart = echarts.init(<HTMLElement>document.getElementById('main'))
             myChart.showLoading();
             await jq.get(globalProperties.$httpUrl + '/data/gexf/04.gexf', function (xml: any) {
                 myChart.hideLoading();
+
                 gexfwj = xml;
 
                 var graph = gexf.parse(xml);
@@ -557,6 +434,7 @@ export default defineComponent({
 
                 });
                 let option = {
+
                     title: {
                         text: '详细风险图',
                         subtext: '恶意行为轮廓图',
@@ -710,36 +588,44 @@ export default defineComponent({
                 };
                 myChart.setOption(<any>option);
             }, 'xml');
+
+
+            model = []
+
+            //将节点位置赋值给model
+
+
+            let map = myChart.getViewOfSeriesModel(myChart.getModel().getSeries()[0])._model.preservedPoints
+            console.log(map)
+
+            for (let key in map) {
+
+                //查看效果
+                model.push({
+                    id: key,
+                    x: map[key]
+                })
+            };
+
             myChart.on('contextmenu', function (params: any) {
 
-                nodeid.value = params.data.id
+                nodeid2.value = params.data.id
 
 
             });
+            myChart.on('click', function (params: any) {
 
-        }
-        //注册全屏显示
-        let isquanping = 0
-        let xiangxitu = ref("box-card xiangxitu")
-        let xitu = ref("echarstu")
-        const quanping = () => {
-            if (!isquanping) {
-                xiangxitu.value = "box-card quanpingxiangxitu"
-                xitu.value = "quanpingecharstu"
-                setTimeout(() => {
-                    echarts.init(<HTMLElement>document.getElementById('main')).dispose();
-                    echarsinti()
-                    isquanping = 1
-                }, 100);
-            } else {
-                xiangxitu.value = "box-card xiangxitu"
-                xitu.value = "echarstu"
-                setTimeout(() => {
-                    echarts.init(<HTMLElement>document.getElementById('main')).dispose();
-                    echarsinti()
-                    isquanping = 0
-                }, 100);
-            }
+
+                console.log(params)
+
+                nodeid.value = params.data.id
+                nodeid_arr.value = params.data.id
+            })
+
+
+
+
+
         }
 
         //注册添加节点
@@ -789,18 +675,8 @@ export default defineComponent({
 
 
         }
-        //路由跳转-appupdata
-        const tobjms = () => {
-            router.push({
-                name: 'AppUpdata',
-                //后续将具体gexf传过去
-                // query: {
-                //     img, name
-                // }
-            })
-        }
         //确认是否删除
-        const if_delenode = async (nodeid: string) => {
+        const if_delenode = async (nodeid_arr: string) => {
             await ElMessageBox.confirm(
                 '您确定要删除该节点吗?',
                 '警告',
@@ -811,40 +687,43 @@ export default defineComponent({
                 }
             )
                 .then(async () => {
-                    console.log(nodeid)
-                    console.log(gexfwj)
-                    //删除node节点
-                    let nnn = gexfwj.querySelectorAll(`node`);
-                    nnn.forEach((n: any) => {
+                    let arr = nodeid_arr.split(',')
+                    arr.forEach((nodeid) => {
+                        //删除node节点
+                        let nnn = gexfwj.querySelectorAll(`node`);
+                        nnn.forEach((n: any) => {
 
-                        if (n.id === nodeid) {
-                            let parent = n.parentElement;
-                            parent.removeChild(n);
-                        }
+                            if (n.id === nodeid) {
+                                let parent = n.parentElement;
+                                parent.removeChild(n);
+                            }
+                        })
+                        // 删除edge节点
+                        let eee = gexfwj.querySelectorAll(`edge`);
+                        eee.forEach((n: any) => {
+                            if (n.getAttribute("source") === nodeid) {
+                                let parent = n.parentElement;
+                                parent.removeChild(n);
+                                return
+                            }
+                            if (n.getAttribute("target") === nodeid) {
+                                let parent = n.parentElement;
+                                parent.removeChild(n);
+                                return
+                            }
+                        })
+
                     })
-                    // 删除edge节点
-                    let eee = gexfwj.querySelectorAll(`edge`);
-                    eee.forEach((n: any) => {
-                        if (n.getAttribute("source") === nodeid) {
-                            let parent = n.parentElement;
-                            parent.removeChild(n);
-                            return
-                        }
-                        if (n.getAttribute("target") === nodeid) {
-                            let parent = n.parentElement;
-                            parent.removeChild(n);
-                            return
-                        }
-                    })
-
-
                     //修改图表
                     let aaa = xmlToString(gexfwj)
                     await updatagexf_addnode({ aaa }).then(res => {
                         console.log(res)
                         //刷新图表
                         echarts.init(<HTMLElement>document.getElementById('main')).dispose();
+                        is_kx.value = false
                         echarsinti()
+                        nodeid.value=''
+                        nodeid2.value=''
                         ElMessage.success("删除成功。")
                     })
                 })
@@ -855,46 +734,154 @@ export default defineComponent({
         //注册删除节点
         const delenode = () => {
 
-            if (nodeid.value === '') {
-                ElMessage.error('请选中节点后右键')
+            if (nodeid_arr.value === '') {
+                ElMessage.error('请选中节点')
             } else {
 
-                if_delenode(nodeid.value)
-                nodeid.value = ''
+                if_delenode(nodeid_arr.value)
+                nodeid_arr.value = ''
             }
 
+        }
+        //退出编辑模式
+        const toback = () => {
+
+            router.back()
         }
 
 
 
         //注册连接节点
         const ljnode = () => {
-            alert("11")
-        }
-        //隐藏菜单事件
-        const hidecaidan = () => {
+            //判断1 2节点
+            if (!nodeid.value || !nodeid2.value) {
+                ElMessage.error("请选择节点1与节点2")
+                return
+            }
+            if (nodeid.value === nodeid2.value) {
+                ElMessage.error("不要选择相同节点")
+                return
+            }
+            //连接节点
+            console.log(gexfwj)
+            let eee = gexfwj.querySelectorAll(`edge`);
+            let is_lj: number = 0
+            eee.forEach((n: any) => {
+                if (n.getAttribute("source") === nodeid.value && n.getAttribute("target") === nodeid2.value || n.getAttribute("source") === nodeid2.value && n.getAttribute("target") === nodeid.value) {
+                    let parent = n.parentElement;
+                    parent.removeChild(n);
+                    is_lj = 1
+                    return
+                }
+            })
+            if (is_lj === 0) {
+                //创建node节点
+                var edge = gexfwj.createElement("edge");
+                edge.id = nanoid();
+                edge.setAttribute("source", nodeid.value)
+                edge.setAttribute("target", nodeid2.value)
+                gexfwj.getElementsByTagName("edges")[0].appendChild(edge);
+            }
+            // //修改图表
+            let aaa = xmlToString(gexfwj)
+            updatagexf_addnode({ aaa }).then(res => {
 
-            nodeid.value = ''
+                //刷新图表
+                echarts.init(<HTMLElement>document.getElementById('main')).dispose();
+                echarsinti()
+                if (is_lj === 0)
+                    ElMessage.success("连接成功！")
+                else
+                    ElMessage.success("解除连接成功！")
+                //关闭弹窗
+
+            })
+
 
         }
+
+        //节点数组
+        const nodearr: Array<string> = reactive([])
+        const nodeid_arr = ref("")
+
+        //监听开启框选
+        watch(nodearr, (newValue, oldValue) => {
+
+            let unq = [...new Set(nodearr)]
+            console.log(unq)
+            nodeid_arr.value = unq.join(",")
+        })
+
+        //监听开启框选
+        watch(is_kx, (newValue, oldValue) => {
+
+            if (newValue === true) {
+                myChart.getZr().on('mousedown', function (params: any) {
+                    nodearr.length = 0
+                    //console.log(params)
+                    start_x.value = params.offsetX;
+                    start_y.value = params.offsetY;
+                    myChart.getZr().on('mousemove', function (params: any) {
+                        kxxs.value = true
+                        end_x.value = params.offsetX;
+                        end_y.value = params.offsetY;
+                        const cL = start_x.value;
+                        const cR = start_y.value;
+                        const cLw = start_x.value + wwww.value;
+                        const cRh = start_y.value + hhhh.value;
+                        //console.log(model)
+                        model.forEach((m: any) => {
+                            //console.log("mmmm"+m.x+","+m.y)
+                            if ((cL < m.x[0] && m.x[0] < cLw) && (cR < m.x[1] && m.x[1] < cRh)) {
+                                nodearr.push(m.id)
+                            }
+                        })
+                    })
+                    myChart.getZr().on('mouseup', function (params: any) {
+
+                        kxxs.value = false
+                        myChart.getZr().off('mousemove')
+                        myChart.getZr().off('mouseup')
+                    })
+
+                })
+            }
+            if (newValue === false) {
+                myChart.getZr().off('mousedown')
+                echarts.init(<HTMLElement>document.getElementById('main')).dispose();
+                echarsinti()
+            }
+        });
+
+
 
         onMounted(async () => {
+            //关闭右键菜单默认事件
+            document.oncontextmenu = function () {
+
+                return false;
+            }
+
             //加载echars
-            echarsinti()
+            await echarsinti()
+            // m.onclick = function (event) {
+            //     console.log(event.x + ',' + event.y)
+            // }
+
+
+
 
 
         });
         onBeforeUnmount(() => {
             echarts.init(<HTMLElement>document.getElementById('main')).dispose();
         })
-        return { tobjms, if_delenode, nextbutton, attvalues_arr_z, pre, active, next, transferUpdata, attvalues_renderFunc, attvalues_arr, attvalues_data, addnode_true, nodelabel, dialogaddnodeVisible, hidecaidan, nodeid, delenode, ljnode, addnode, virusimg, virusname, Back, size, back, quanping, xiangxitu, xitu }
+        return { nodeid_arr, nodearr, is_kx, wwww, hhhh, end_x, end_y, kxxs, start_x, start_y, zhedie, toback, nodeid2, if_delenode, nextbutton, attvalues_arr_z, pre, active, next, transferUpdata, attvalues_renderFunc, attvalues_arr, attvalues_data, addnode_true, nodelabel, dialogaddnodeVisible, nodeid, delenode, ljnode, addnode, virusimg, virusname, Back, size, back }
     }
 })
 </script>
 
 <style lang="less" scoped>
-@import './less/box1.less';
-@import './less/box2.less';
 @ziti: 宋体;
 
 
@@ -902,19 +889,17 @@ export default defineComponent({
     font-family: @ziti;
 }
 
-.m-top160 {
-    margin-top: 160px;
+//选框样式
+.mask {
+
+    position: absolute;
+    background: rgba(105, 180, 255, 0.4);
+
+    z-index: 100;
+
 }
 
-.m-top20 {
-
-    margin-top: 20px;
-}
-
-.w10 {
-    width: 10px;
-}
-
+//添加节点样式
 .steps_button {
     display: flex;
     justify-content: center;
@@ -942,5 +927,123 @@ export default defineComponent({
 
 .nodj {
     pointer-events: none;
+}
+
+//图表样式
+.box {
+    height: 100%;
+    width: 100%;
+
+
+}
+
+.zhanshiqu {
+    height: calc(100vh);
+    border: 4px solid rgb(167, 132, 88);
+    border-right: 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+
+    .main {
+        background-color: rgb(252, 243, 231);
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.gongnengqu {
+    overflow-y: auto;
+    height: calc(100vh);
+    border: 4px solid rgb(167, 132, 88);
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: rgb(226, 193, 154);
+
+    .gnq-title {
+        line-height: 25px;
+
+        border: 2px solid rgb(252, 243, 231);
+        background-color: rgb(167, 132, 88);
+        border-bottom: 1px;
+    }
+
+    .gnq-content {
+        border: 2px solid rgb(238, 238, 237);
+        background-color: rgb(218, 184, 141);
+        height: 300px
+    }
+
+    ::v-deep .el-collapse-item__header {
+        background-color: rgb(218, 184, 141);
+    }
+
+    ::v-deep .el-collapse-item__wrap {
+        background-color: rgb(252, 243, 231);
+    }
+
+    .tubiaoneirong {
+        display: flex;
+        margin: 10px;
+        background-color: rgb(252, 243, 231);
+
+
+        flex-wrap: wrap;
+    }
+
+    .tubiaoneirong1 {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        background-color: rgb(252, 243, 231);
+        align-items: center;
+
+        .el-button {
+            margin-top: 10px;
+            background-color: rgb(207, 170, 123);
+        }
+
+        .el-button:hover {
+            margin-top: 10px;
+            background-color: rgb(208, 182, 149);
+        }
+
+    }
+
+    .kongjian {
+        margin: 10px;
+        line-height: 55px;
+        border-radius: 10px;
+        box-shadow: 1px 1px 7px #727272;
+        text-align: center;
+        font-size: 20px;
+        background-color: rgb(218, 184, 141);
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .kongjian:hover {
+        box-shadow: 1px 1px 5px #cbcbcb;
+
+    }
+}
+
+.nodeid {
+
+    background-color: rgb(252, 243, 231);
+
+}
+
+.tuichu {
+    width: 100%;
+
+}
+
+.is_kx {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 1%;
 }
 </style>

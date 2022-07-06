@@ -51,6 +51,7 @@
 import { defineComponent, ref, reactive, onMounted } from "vue"
 import { useRouter } from "vue-router"
 import axios from 'axios'
+import { getblog } from '../../../api/api'
 import { ElMessage } from 'element-plus'
 export default defineComponent({
     setup() {
@@ -73,10 +74,7 @@ export default defineComponent({
         //获取所有博客信息
         let allblog: any = reactive([])
         const getallblog = async () => {
-            await axios({
-                method: 'get',
-                url: 'api/getblog',//这里由于之前设置了baseURL,所以直接跳过顶级域名
-            })
+            await getblog()
                 .then(function (response: any) {
                     console.log(response)
                     allblog.push(...response.data.data)

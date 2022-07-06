@@ -45,6 +45,11 @@ const routes: RouteRecordRaw[] = [
             },
         ]
     },
+    {//图表修改页面
+        path: '/appupdata',//错误页面
+        name: 'AppUpdata',
+        component: () => import('../views/App/AppUpdata/index.vue')
+    },
 
     {//重定向
         path: '/:patMatch(.*)',
